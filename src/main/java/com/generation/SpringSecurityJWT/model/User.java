@@ -15,12 +15,6 @@ public class User {
     @Column(nullable = false, length = 200)
     private String name;
 
-    @Column(nullable = false, length = 200)
-    private String surname;
-
-    @Column(nullable = true, length = 255)
-    private String address;
-
     @Column(name = "email", unique = true)
     private String username;
 
@@ -44,22 +38,6 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getUsername() {

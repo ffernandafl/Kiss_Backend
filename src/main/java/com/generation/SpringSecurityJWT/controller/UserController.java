@@ -5,7 +5,6 @@ import com.generation.SpringSecurityJWT.service.UserService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.persistence.Entity;
 
 @RestController
 @RequestMapping("/api/user")
